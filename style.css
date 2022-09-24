@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(56, 56, 56);
+    overflow: hidden;
+}
+#container{
+ 
+    
+    /* height: 800px; */
+    background-color: rgb(62, 62, 62);
+    margin: auto;
+   
+}
+#main{
+    /* background-color: aqua; */
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    padding: 0 10%;
+    cursor: url('./images/cursor3.png'),auto;
+    
+}
+header{
+    background-color: rgb(52, 50, 50);
+    color: white;
+    height: 60px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    justify-content: space-between;
+    
+}
+header ul{
+    display: flex;
+    list-style: none;
+    justify-items: center ;
+    justify-content: space-around;
+    
+}
+header ul li{
+    margin-left: 20px;
+}
+
+.mainPhoto{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-top: 5%;
+    /* position: relative; */
+}
+.mainPhoto img{
+   border-radius: 50%;
+   /* -webkit-mask: radial-gradient(white 10%, transparent);
+  display:block; */
+   opacity: 0.7;
+}
+
+
+.mainPhoto h1{
+    padding: 30px;
+    text-align: center;
+    line-height: 2;
+   
+    font-family: 'Press Start 2P', cursive;
+}
+.mainText{
+    
+    padding: 0 100px 100px 50px
+}
+
+.bullet{
+    position: absolute;
+    height: 10px;
+    width: 4px;
+    background-color: red;
+}
+ /* The animation code */
+ @keyframes bullet {
+    from {
+        opacity: 1;
+        transform: none;
+      }
+      to {
+        opacity: 0;
+        transform: translate3d(0, 100vh, 0);
+        
+      }
+  }
+  
+  /* The element to apply the animation to */
+  .bullet{
+    animation-name: bullet;
+    animation-duration: 1s;
+    
+   
+  } 
