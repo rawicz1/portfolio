@@ -15,8 +15,8 @@
 <body>
     <div id="container" >
         
-        <section id="main"  onmousedown="mainClick()">
-            <header>
+        <section id="main"  >
+            <header id="mouseClick"  onmousedown="mainClick()">
                 Rafal 
                 <ul>
                     <li>Games</li>
@@ -24,13 +24,17 @@
                     <li>About</li>
                 </ul>
             </header>
-            <div class="mainPhoto">
+            <div class="mainPhoto" >
                 <div class="mainText">
                 <h1>Hi, I am Raf, web developer</h1>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolores debitis corrupti dolorum, quasi doloremque eveniet aliquid reprehenderit similique incidunt atque inventore culpa est, accusamus maxime itaque voluptatem numquam id.
                 <!-- <span><h1>There's always a solution</h1></span> --></div>
-                <div class="imageBox">
-                <img id="main_image" src="./images/main_photo_pixel.png" onmouseover="changePhoto()"  onmouseout="backToPixel()"    alt="photo"/>
+                <div class="imageBox" >
+                    <img src="images/main_photo_cubism.png" alt="image back" >
+                    <div class="overlay">
+                        <img src="images/main_photo.png" class="img-front"   alt="image front" >
+                    </div>
+                    
                 </div>
             </div>
                 

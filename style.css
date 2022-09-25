@@ -22,7 +22,7 @@ body{
     width: 100%;
     position: absolute;
     padding: 0 10%;
-    cursor: url('./images/cursor3.png'),auto;
+    /* cursor: url('./images/cursor3.png'),auto; */
     
 }
 header{
@@ -35,6 +35,7 @@ header{
     align-items: center;
     padding: 0 10%;
     justify-content: space-between;
+    cursor: url('./images/cursor3.png'),auto;
     
 }
 header ul{
@@ -45,24 +46,67 @@ header ul{
     
 }
 header ul li{
-    margin-left: 20px;
+    margin-left: 30px;
 }
-
+ 
 .mainPhoto{
-    /* border: 1px solid red; */
+
     display: flex;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     padding-top: 5%;
-    /* position: relative; */
+    
+} 
+.imageBox {	
+	position: relative;
+	display: inline-block;
+  padding-right: 20px;
+  }
+
+  .imageBox img{
+    border-radius: 50%;
+    cursor: url('./images/cursor3.png'),auto;
+    
+  }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  
 }
-.mainPhoto img{
-   border-radius: 50%;
-   /* -webkit-mask: radial-gradient(white 10%, transparent);
-  display:block; */
-   opacity: 0.7;
+
+.imageBox:hover .overlay {
+  opacity: 1;
 }
+
+/* .imageBox .img-front {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0; */
+	/* z-index: 1; */
+  /* opacity: 0;
+  transition: 1s;
+}
+.imageBox:hover .img-front{
+  opacity: 1;
+  display: inline-block;
+  
+} */
+
+
+
+
+
+
+
 
 
 .mainPhoto h1{

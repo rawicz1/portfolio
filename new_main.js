@@ -3,7 +3,7 @@ let mainSection;
 let timerId
 function mainClick(){
     
-    const mainSection = document.getElementById('main');
+    const mainSection = document.getElementById('mouseClick');
     mainSection.addEventListener('click', showDiv)
     
 function showDiv(e){
@@ -31,13 +31,13 @@ function showDiv(e){
 }
 //to change main photo from pixelated
 
-function changePhoto(){
-    console.log('hovering')
-    document.getElementById('main_image').src='./images/main_photo.png'
-}
-function backToPixel(){
-    document.getElementById('main_image').src='./images/main_photo_pixel.png'
-}
+// function changePhoto(){
+//     console.log('hovering')
+//     document.getElementById('main_image').src='./images/main_photo.png'
+// }
+// function backToPixel(){
+//     document.getElementById('main_image').src='./images/main_photo_cubism.png'
+// }
 
 // function showDiv(e){
 //     // console.log('showdiv functiopn')
