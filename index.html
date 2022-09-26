@@ -22,14 +22,14 @@
                 <img src="images/main_photo.png" alt="logo" > 
                 <ul>
                     <li>Click me!</li>
-                    <li>Portfolio</li>
-                    <li>Contact</li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </header>
             <div class="mainPhoto" >
                 <div class="mainText">
-                <h1>Hi, I am Rafal</h1>
-                I am a web developer, working with HTML, CSS and Javascript, also very comfortable with Python. Picking up a new framework or a language isn't a problem, too. A good challenge is always welcome.
+                <h1>Hi, I am Rafal</h1><br><br>
+                I am a web developer, working with HTML, CSS and Javascript, also very comfortable with Python. Picking up a new framework or a language isn't a problem, too. A good challenge is always welcomed.
                     <br> <br> 
                     Check out my portfolio!
                     <!-- <span><h1>There's always a solution</h1></span> --></div>
@@ -42,15 +42,62 @@
                 </div>
             </div> 
         </section>
-        <section id="about">
-                section about test
-            <div>about section</div>
+        <section id="projects">
+            <div class="projectsHeader">
+                <div class="line"></div>
+            <h2>Python projects</h2> <div class="line"></div> </div>
+            <div class="boxes">
+                <div class="hangmanText">
+                    Because who doesn't like a good hangman game? 
+            <div class="hangmanBox">                
+            </div></div>
+                <div class="alienText">
+                    Or Space Invaders with a twist?
+                
+            <div class="alien"></div></div>
+
+        </div>
 
 
         </section>
         <section id="contact">
-            Find me on LinkedIn
+            <h2>Contact</h2>
+            <div class="contactMain">
+            <div class="icons">
+                <a href="https://github.com/rawicz1"><img src="./images/github_logo.jpg" alt="github logo"></a> 
+                <a href="https://www.linkedin.com/in/raf-wiczenbach-558218238/"><img src="./images/linked_logo.jpg" alt=""></a>
+               
+            </div>
+
+            <div class="contactForm">
+                <form action="action_page.php">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div> 
+            </div>
+            
         </section>
+        <footer>
+            copyright
+        </footer>
         
     </div>
 </body>
