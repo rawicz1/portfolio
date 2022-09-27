@@ -291,3 +291,35 @@ footer{
     color: aliceblue;
     border: 1px solid red;
   }
+  /*-----------------------------------------mobile---------------------------*/
+
+  @media screen and (max-width: 580px) {
+    body {
+      
+      font-size: 0.5em;
+    }
+    #main{
+      height: auto;
+    }
+    #clickMe{
+      display: none;
+    }
+    #container{ 
+      width: 100%; 
+      /* background-color: rgb(62, 62, 62);     */
+      margin: auto;   
+  }
+  .mainText{
+    border: 1px solid red;
+    padding: 10px;
+  }
+  .imageBox img{
+    width: 100%;
+    border: 1px solid red;
+    
+  }
+  .mainPhoto h1{
+    margin-top: 5%;
+  }
+
+  }
