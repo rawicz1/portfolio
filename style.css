@@ -18,6 +18,9 @@ body{
     height: 100vh;   
     
 }
+#clickMe{
+  color: red;
+}
 /* --------header--------*/
 header{
     background-color: rgb(52, 50, 50);
@@ -255,8 +258,8 @@ input[type=submit]:hover {
 }
  .bullet{
     position: absolute;
-    height: 10px;
-    width: 4px;
+    height: 15px;
+    width: 8px;
     background-color: red;
     z-index: 10;
 }
