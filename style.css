@@ -373,7 +373,7 @@ footer{
 #video.expanded {
   z-index: 50;
    background-color: green;
-   width: 40vh;
+   width: 80%;
    box-shadow: 0 0 20px rgb(0, 2, 3);
    /* position:absolute; */
 }
