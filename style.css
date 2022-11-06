@@ -159,49 +159,9 @@ header a:hover{
   /* height: 500px; */
   justify-content: space-around;
   font-family: 'Roboto', sans-serif;
-  color: white;
-  
-  
+  color: white;   
 }
-.alien{
-  background-image: url('./images/alien_invasion.png');
-    
-    width: 400px;
-    height: 250px;
-    background-size: contain;
-    margin: 50px;
-    margin-top: 20px;
-    border-radius: 10px;
-    align-self: flex-end;
-    box-shadow: 0 0 15px rgb(6, 6, 6);
-}
-.hangmanText{
-  margin-top: 50px;
-  
-}
-.alienText{
-  margin: 0px;
-  display: flex;
-  flex-direction: column;
-  
-  justify-content: end;
-}
-.alien:hover{
-  background-image: url('./images/alien_invasion2.png');
-}
-  .hangmanBox{
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgb(6, 6, 6);
-    background-image: url('./images/hangman_menu.png');
-    margin: 50px;
-    margin-top: 20px;
-    width: 400px;
-    height: 250px;
-    background-size: contain;
- }
- .hangmanBox:hover{
-  background-image: url('./images/hangman_game.png');
- }
+
  h2{
   font-family: 'Press Start 2P', cursive;
   color: white;
@@ -223,6 +183,7 @@ header a:hover{
 }
 
 #video.expanded {
+  z-index: 50;
    background-color: green;
    width: 70vh;
    box-shadow: 0 0 20px rgb(0, 2, 3);
@@ -382,27 +343,6 @@ footer{
   /* flex-wrap: nowrap; */
    
 }
-.alien{
- 
-    width: 250px;
-    height: 150px;
-    background-size: contain;
-    margin: 50px;
-    margin-top: 20px;
-    border-radius: 10px;
-    /* align-self: flex-end; */
-    box-shadow: 0 0 15px rgb(6, 6, 6);
-}
-.hangmanBox{
-  width: 250px;
-  height: 150px;
-  margin: 20px;
-  
-}
-.hangmanText{
-  margin-top: 40px;
-  
-}
 .contactForm {
   margin: 20px;
   border-radius: 5px;
@@ -415,4 +355,36 @@ footer{
 .bullet{
   display: none;
 }
+
+#video {
+  /* border-bottom: 1px solid red; */
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  border-radius: 10px;
+  width: 20vh;
+  transition: all 0.5s;
+  
+  
+}
+#video:hover{
+  box-shadow: 0 0 15px rgb(0, 3, 5);
+  width: 22vh;
+}
+
+#video.expanded {
+  z-index: 50;
+   background-color: green;
+   width: 40vh;
+   box-shadow: 0 0 20px rgb(0, 2, 3);
+   /* position:absolute; */
+}
+.video-box{
+  padding: 20px;
+  border: 1px solid red;
+  width: 80%;
+}
+
+
+
+
+
   }
