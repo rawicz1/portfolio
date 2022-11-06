@@ -279,8 +279,6 @@ footer{
   padding: 10px;
   background-color: gray;
 }
-
-
  /* The animation code */
  @keyframes bullet {
     from {
@@ -289,18 +287,15 @@ footer{
       }
       to {
         opacity: 0;
-        transform: translate3d(0, 100vh, 0);
-        
+        transform: translate3d(0, 100vh, 0);        
       }
   }
-  
-  /* The element to apply the animation to */
+    /* The element to apply the animation to */
   .bullet{
     animation-name: bullet;
     animation-duration: 1s;     
   } 
-  #about{
-    
+  #about{    
     color: aliceblue;
     border: 1px solid red;
   }
@@ -316,6 +311,7 @@ footer{
     }
     header{
       height: 12vh;
+      font-size: 1.7em;
     }
     #clickMe{
       display: none;
@@ -325,10 +321,13 @@ footer{
       /* background-color: rgb(62, 62, 62);     */
       margin: auto;   
   }
+  .mainPhoto h1{
+    font-size: 2.2em;
+  }
   .mainText{
     padding: 10px;
     /* padding-bottom: 10vh; */
-    font-size: 1.3em;
+    font-size: 1.5em;
     justify-content: flex-end;
   }
  
