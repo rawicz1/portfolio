@@ -1,11 +1,12 @@
 // const bullet = document.createElement('div');
 let mainSection;
 let timerId
+
 function mainClick(){
     
     const mainSection = document.getElementById('mouseClick');
     mainSection.addEventListener('click', showDiv)
-    
+    console.log(mainSection)
 function showDiv(e){
     let x = e.clientX
     let y = e.clientY
@@ -29,47 +30,26 @@ function showDiv(e){
     
 };
 }
-//to change main photo from pixelated
-
-// function changePhoto(){
-//     console.log('hovering')
-//     document.getElementById('main_image').src='./images/main_photo.png'
-// }
-// function backToPixel(){
-//     document.getElementById('main_image').src='./images/main_photo_cubism.png'
-// }
-
-// function showDiv(e){
-//     // console.log('showdiv functiopn')
-//     let x = e.clientX
-//     let y = e.clientY
-//     console.log(e.clientX)
-//     bullet.classList.add('bullet')
-//     bullet.style.left = x + 'px'
-//     bullet.style.top = y + 'px'
-//     console.log(bullet)
-//     mainSection.appendChild(bullet)
-   
-// }
+function playPause() { 
 
 
+    
+const myVideo = document.getElementById('video')
 
 
+    
+    if (myVideo.paused) {
+        // myVideo.setAttribute('style', 'width: 50vh')
+        myVideo.classList.toggle('expanded')
+        myVideo.play();
 
-// let x = function getXY(e){
-//     let mainSection = document.getElementById('main');
-//     mainSection.addEventListener('click', getX);
-//     function getX(e){
-//         let x = e.clientX;
-//         // console.log(x)
-//         return x
-//     }
+    }
+    //   myVideo.play(); 
+    else {
+        // myVideo.setAttribute('style', 'width: 20vh' );
+        myVideo.classList.toggle('expanded')
+        myVideo.pause(); 
+    }
+      
+  } 
 
-// }
-// function showX(){
-//     x()}
-// console.log(x)
-
-
-
-// block.classList.add('bullet');

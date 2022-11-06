@@ -15,11 +15,12 @@ body{
     margin: auto;   
 }
 #main{   
-    height: 100vh;   
-    
+    height: 100vh;    
 }
 #clickMe{
   color: red;
+  cursor: url('./images/cursor3.png'),auto;
+  margin-right: 5vh;
 }
 /* --------header--------*/
 header{
@@ -31,12 +32,10 @@ header{
     display: flex;
     align-items: center;
     padding: 0 5%;
-    justify-content: space-between;
-    cursor: url('./images/cursor3.png'),auto;
-    
+    justify-content: space-between; 
 }
 header img{
-  width: 45px;
+  width: 7vh;
   border-radius: 50%;
 }
 header ul{
@@ -48,7 +47,7 @@ header ul{
 }
 header ul li{
     margin-left: 30px;
-    /* padding: 30px; */
+    
    
 }
 header a{
@@ -57,6 +56,9 @@ header a{
 
   padding-top: 25px;
   padding-bottom: 25px;
+}
+header a:hover{
+  color: rgb(6, 23, 255);
 }
 /*------------------main section--------------------*/
 
@@ -82,8 +84,6 @@ header a{
 
   .imageBox img{
     border-radius: 50%;
-    /* cursor: url('./images/cursor3.png'),auto; */
-    
   }
 .overlay {
   position: absolute;
@@ -99,12 +99,10 @@ header a{
 .imageBox:hover .overlay {
   opacity: 1;
 }
-.mainPhoto h1{
-    /* padding: 30px; */
+.mainPhoto h1{    
     text-align: center;
     line-height: 2;
-   margin-top: 20%;
-   
+    margin-top: 20%;   
     font-family: 'Press Start 2P', cursive;
 }
 .mainText{
@@ -118,34 +116,51 @@ header a{
   /*-------------------------------projects--------------*/
 #projects{
   
+ 
+  
   /* background-color: rgb(111, 111, 111); */
   text-align: center;
-  height: 100vh;
+  height: auto;
+}
+.projects-bg{
+  /* background-image: url('./images/python_code_background.png'); */
+  background-image: linear-gradient(rgba(58, 63, 80, 0.7), rgba(118, 121, 131, 0.7)), url('./images/python_code_background.png');
+		/* background-position: center; */
+		background-repeat: repeat;
+  /* background-size: cover; */
+  min-height: 100vh;
+  
+  top: 100px;
+  
 }
 #projects h2{
   
-  color: blue
+  color: rgb(255, 255, 255)
 }
 .projectsHeader{
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 50px;
+  opacity: 1;
 
 }
 .line{
   width: 20%;
   height: 2px;
-  background-color: blue;
+  background-color: rgb(228, 228, 228);
+  opacity: 1;
 }
 .boxes{
   
   display: flex;
-  /* flex-wrap: nowrap; */
-  height: 500px;
-  justify-content: space-between;
+  /* border: 1px solid red; */
+  flex-wrap: wrap;
+  /* height: 500px; */
+  justify-content: space-around;
   font-family: 'Roboto', sans-serif;
   color: white;
+  
   
 }
 .alien{
@@ -191,6 +206,33 @@ header a{
   font-family: 'Press Start 2P', cursive;
   color: white;
  }
+ 
+ 
+ #video {
+  /* border-bottom: 1px solid red; */
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  border-radius: 10px;
+  width: 40vh;
+  transition: all 0.5s;
+  
+  
+}
+#video:hover{
+  box-shadow: 0 0 15px rgb(0, 3, 5);
+  width: 42vh;
+}
+
+#video.expanded {
+   background-color: green;
+   width: 70vh;
+   box-shadow: 0 0 20px rgb(0, 2, 3);
+   /* position:absolute; */
+}
+.video-box{
+  padding: 20px;
+  /* border: 1px solid red; */
+  width: 50%;
+}
     
  /*---------------------------contact-----------------------*/
 /* #contact{
@@ -325,6 +367,7 @@ footer{
   }
   #projects{
     height: auto;
+    
   }
   .projectsHeader{
     margin: 0;
@@ -369,4 +412,7 @@ footer{
   font-family: 'Roboto', sans-serif;
   box-shadow: 0 0 10px black;
 } 
+.bullet{
+  display: none;
+}
   }
