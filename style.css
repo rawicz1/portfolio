@@ -168,7 +168,7 @@ header a:hover{
  }
  
  
- #video {
+ .video {
   /* border-bottom: 1px solid red; */
   box-shadow: 0 0 10px rgb(0, 0, 0);
   border-radius: 10px;
@@ -177,12 +177,12 @@ header a:hover{
   
   
 }
-#video:hover{
+.video:hover{
   box-shadow: 0 0 15px rgb(0, 3, 5);
   width: 42vh;
 }
 
-#video.expanded {
+.video.expanded {
   z-index: 50;
    background-color: green;
    width: 70vh;
@@ -305,7 +305,7 @@ footer{
       font-size: 0.5em;
     }
     #main{
-      height: auto;
+      height: 100vh;
     }
     #clickMe{
       display: none;
@@ -317,8 +317,9 @@ footer{
   }
   .mainText{
     padding: 10px;
-    padding-bottom: 10vh;
+    /* padding-bottom: 10vh; */
     font-size: 1.3em;
+    justify-content: flex-end;
   }
  
   .imageBox img{
@@ -332,6 +333,10 @@ footer{
   .mainPhoto{
     margin: auto;
     flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+   
+
     width: 80%;
   }
   .mainPhoto h1{
@@ -383,7 +388,7 @@ footer{
   display: none;
 }
 
-#video {
+.video {
   /* border-bottom: 1px solid red; */
   box-shadow: 0 0 10px rgb(0, 0, 0);
   border-radius: 10px;
@@ -393,13 +398,13 @@ footer{
   
   
 }
-#video:hover{
+.video:hover{
   box-shadow: 0 0 15px rgb(0, 3, 5);
   width: 20vh;
   opacity: 1;
 }
 
-#video.expanded {
+.video.expanded {
   z-index: 50;
    background-color: green;
    width: 80%;
