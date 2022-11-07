@@ -19,7 +19,7 @@ body{
 }
 #clickMe{
   color: red;
-  cursor: url('./images/cursor3.png'),auto;
+  cursor: url('./images/cursor4.png'),auto;
   margin-right: 5vh;
 }
 /* --------header--------*/
@@ -313,6 +313,9 @@ footer{
       height: 12vh;
       font-size: 1.7em;
     }
+    header a:hover{
+      color: rgb(255, 255, 255);
+    }
     #clickMe{
       display: none;
     }
@@ -322,12 +325,12 @@ footer{
       margin: auto;   
   }
   .mainPhoto h1{
-    font-size: 2.2em;
+    font-size: 1.7em;
   }
   .mainText{
     padding: 10px;
     /* padding-bottom: 10vh; */
-    font-size: 1.5em;
+    font-size: 1.7em;
     justify-content: flex-end;
   }
  
