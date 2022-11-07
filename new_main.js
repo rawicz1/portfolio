@@ -8,6 +8,7 @@ window.onload = function getWidth(){
     if (videoBox.offsetWidth < 400){
         for (let i=0; i<videoTag.length; i++){
             videoTag[i].setAttribute('autoplay', true)
+            videoTag[i].pause()
         }
         
         
@@ -23,7 +24,7 @@ window.onload = function getWidth(){
 
 function mainClick(){
     
-    const mainSection = document.getElementById('mouseClick');
+    const mainSection = document.getElementById('clickMe');
     mainSection.addEventListener('click', showDiv)
     // console.log(mainSection)
 function showDiv(e){

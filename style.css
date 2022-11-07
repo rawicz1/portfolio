@@ -4,14 +4,12 @@
     box-sizing: border-box;
 
 }
-body{
-    /* background-color:rgb(207, 207, 207); */
+body{    
     overflow: auto;
     background-image: linear-gradient(rgb(52, 50, 50), rgb(159, 159, 159) );
 }
 #container{ 
-    width: 80%; 
-    /* background-color: rgb(62, 62, 62);     */
+    width: 80%;     
     margin: auto;   
 }
 #main{   
@@ -21,6 +19,7 @@ body{
   color: red;
   cursor: url('./images/cursor4.png'),auto;
   margin-right: 5vh;
+ 
 }
 /* --------header--------*/
 header{
@@ -42,18 +41,14 @@ header ul{
     display: flex;
     list-style: none;
     justify-items: center ;
-    justify-content: space-around;
-    
+    justify-content: space-around;    
 }
 header ul li{
-    margin-left: 30px;
-    
-   
+    margin-left: 30px; 
 }
 header a{
   color: white;
   text-decoration: none;
-
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -63,14 +58,12 @@ header a:hover{
 /*------------------main section--------------------*/
 
 .mainPhoto{
-
     display: flex;
     align-items: center;
     font-family: 'Roboto', sans-serif;
     color: white;
     padding: 5%;
-    height: 88vh;
-    
+    height: 88vh;    
     } 
 
 .imageBox {	
@@ -78,9 +71,7 @@ header a:hover{
 	display: inline-block;
   height: 100%;
   margin: auto;
-  align-items: center;
-  /* padding-right: 20px; */
-  
+  align-items: center;    
   }
 
   .imageBox img{
@@ -203,9 +194,18 @@ header a:hover{
 }
     
  /*---------------------------contact-----------------------*/
-/* #contact{
-  /* background-color: rgb(159, 159, 159); */
 
+  .contactHeader{
+    display: flex;
+    width: 80%;
+    
+    
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 50px 0; */
+    opacity: 1;
+  
+  }
 #contact h2{
   text-align: center;  
   
@@ -304,8 +304,7 @@ footer{
   /*-----------------------------------------mobile---------------------------*/
 
   @media screen and (max-width: 580px) {
-    body {
-      
+    body {      
       font-size: 0.5em;
     }
     #main{
@@ -323,25 +322,22 @@ footer{
     }
     #container{ 
       width: 100%; 
-      /* background-color: rgb(62, 62, 62);     */
+      
       margin: auto;   
   }
   .mainPhoto h1{
-    font-size: 1.7em;
+    font-size: 1.2em;
   }
   .mainText{
     padding: 10px;
     /* padding-bottom: 10vh; */
     font-size: 1.7em;
     justify-content: flex-end;
-  }
-  
-  .imageBox img{
-    
+  }  
+  .imageBox img{    
     width: 80%;
     display: flex;
-    margin: auto;
-        
+    margin: auto;        
   }
   .mainPhoto{
     margin: auto;
@@ -354,7 +350,7 @@ footer{
     margin-top: 5%;
   }
   #projects{
-   margin-top: 10vh;
+   /* margin-top: 10vh; */
     height: auto;    
   }  
   #projects h2{
@@ -390,7 +386,7 @@ footer{
   justify-content: space-evenly;
   }
 #contact h2{
-  font-size: 2.5em;
+  font-size: 2.7em;
 }
 .contactForm {
   
