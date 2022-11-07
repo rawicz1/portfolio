@@ -1,6 +1,27 @@
 // const bullet = document.createElement('div');
 let mainSection;
-let timerId
+let timerId;
+
+window.onload = function getWidth(){
+    const videoBox = document.getElementById('projects') 
+    const videoTag = document.getElementsByTagName('video')
+    console.log('videos caught')
+    
+    if (videoBox.offsetWidth < 400){
+        for (let i=0; i<videoTag.length; i++){
+            videoTag[i].setAttribute('autoplay', true)
+        }
+        console.log('less than 500')
+        videoTag[0].setAttribute('autoplay', true)
+    }
+}
+// getWidth()
+// let videosWindow = document.getElementsByClassName('projectsHeader')
+// console.log(videosWindow.length)
+// if (videosWindow. < 1000){ 
+//     alert('asdasdas')
+//     console.log('text')}
+
 
 function mainClick(){
     
@@ -13,8 +34,8 @@ function showDiv(e){
     
     const bullet = document.createElement('div');
     bullet.classList.add('bullet')
-    bullet.style.left = x + 22 +'px'
-    bullet.style.top = y + 'px'
+    bullet.style.left = x + 45 +'px'
+    bullet.style.top = y + 20 + 'px'
     
     mainSection.appendChild(bullet)
     
