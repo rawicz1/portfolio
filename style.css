@@ -147,7 +147,7 @@ header a:hover{
 
 }
 .line{
-  width: 20%;
+  min-width: 10vh;
   height: 2px;
   background-color: rgb(228, 228, 228);
   opacity: 1;
@@ -209,6 +209,7 @@ header a:hover{
 #contact h2{
   text-align: center;
   padding: 20px;
+  
 }
 
  /* Style inputs with type="text", select elements and textareas */
@@ -333,22 +334,19 @@ footer{
     font-size: 1.7em;
     justify-content: flex-end;
   }
- 
+  
   .imageBox img{
     
     width: 80%;
     display: flex;
     margin: auto;
-    
-    
+        
   }
   .mainPhoto{
     margin: auto;
     flex-direction: column;
-    height: 88vh;
-    justify-content: space-between;
-   
-
+    min-height: 88vh;
+    justify-content: space-between;   
     width: 80%;
   }
   .mainPhoto h1{
@@ -356,24 +354,19 @@ footer{
   }
   #projects{
    margin-top: 10vh;
-    height: auto;
-    
+    height: auto;    
+  }  
+  #projects h2{
+    font-size: 1.9em;
+    padding: 1vh 0;
   }
-
-  
 .projects-bg{
-  /* background-image: url('./images/python_code_background.png'); */
   background-image: linear-gradient(rgba(58, 63, 80, 0.7), rgba(118, 121, 131, 0.7)), url('./images/python_code_background.png');
-		/* background-position: center; */
-		background-repeat: repeat;
+	background-repeat: repeat;
   background-size: cover;
-  min-height: 100vh;
-  
+  min-height: 100vh;  
   top: 100px;
-  
-}
-
-
+  }
   .projectsHeader{
     margin: 0;
     padding: 20px 20px 0 20px;
@@ -386,6 +379,17 @@ footer{
   align-items: center;
   /* flex-wrap: nowrap; */
    
+}
+
+#contact{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  }
+#contact h2{
+  font-size: 2.5em;
 }
 .contactForm {
   margin: 20px;
