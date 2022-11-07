@@ -5,14 +5,12 @@ let timerId;
 window.onload = function getWidth(){
     const videoBox = document.getElementById('projects') 
     const videoTag = document.getElementsByTagName('video')
-    console.log('videos caught')
-    
     if (videoBox.offsetWidth < 400){
         for (let i=0; i<videoTag.length; i++){
             videoTag[i].setAttribute('autoplay', true)
         }
-        console.log('less than 500')
-        videoTag[0].setAttribute('autoplay', true)
+        
+        
     }
 }
 // getWidth()
