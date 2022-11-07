@@ -8,10 +8,11 @@ window.onload = function getWidth(){
     if (videoBox.offsetWidth < 400){
         for (let i=0; i<videoTag.length; i++){
             videoTag[i].setAttribute('autoplay', true)
+            setTimeout(function(){
+                console.log("5 seconds have passed.")
+              }, 100);
             videoTag[i].pause()
-        }
-        
-        
+        }       
     }
 }
 // getWidth()
