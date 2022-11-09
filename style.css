@@ -68,7 +68,7 @@ header a:hover{
 
 .imageBox {	
 	position: relative;
-	display: inline-block;
+	display: flex;
   height: 100%;
   margin: auto;
   align-items: center;    
@@ -79,12 +79,12 @@ header a:hover{
   }
 .overlay {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  
+  
   left: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
+  
+  /* width: 100%; */
   opacity: 0;
   transition: .5s ease;  
 }
@@ -118,6 +118,7 @@ header a:hover{
   background-image: linear-gradient(rgba(58, 63, 80, 0.7), rgba(118, 121, 131, 0.7)), url('./images/python_code_background.png');
 	background-repeat: repeat;  
   min-height: 100vh;  
+  border: 1px solid white;
   top: 100px;  
 }
 #projects h2{
@@ -130,6 +131,7 @@ header a:hover{
   justify-content: space-evenly;
   padding: 50px 0;
   opacity: 1;
+  height: 10vh;
 
 }
 .line{
@@ -143,6 +145,7 @@ header a:hover{
   display: flex;
   /* border: 1px solid red; */
   flex-wrap: wrap;
+  min-height: 88vh;
   /* height: 500px; */
   justify-content: space-around;
   font-family: 'Roboto', sans-serif;
@@ -158,12 +161,24 @@ header a:hover{
  .video {
   /* border-bottom: 1px solid red; */
   box-shadow: 0 0 10px rgb(0, 0, 0);
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
   border-radius: 10px;
   width: 40vh;
   opacity: 0.7;
   transition: all 0.5s;
+  /* align-items: center; */
+  /* justify-content: center; */
+ 
+}
+.video p{
   
-  
+  opacity: 1;
+  /* background-color: #202d4f; */
+  padding: 10px;
+  border-radius: 10px;  
+  z-index: 20;
 }
 .video:hover{
   box-shadow: 0 0 15px rgb(0, 3, 5);
@@ -173,19 +188,29 @@ header a:hover{
 
 .video.expanded {
   z-index: 50;
-   background-color: green;
+   /* background-color: green; */
    width: 70vh;
    box-shadow: 0 0 20px rgb(0, 2, 3);
    opacity: 1;
-   /* position:absolute; */
+   
+   
+   
 }
 .video-box{
   padding: 20px;
-  /* border: 1px solid red; */
+ 
+  /* border: 1px solid rgb(0, 255, 106); */
+  
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.video-box p{
+  padding: 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  border-radius: 10px;
+
 }
     
  /*---------------------------contact-----------------------*/
@@ -209,7 +234,7 @@ header a:hover{
  /* Style inputs with type="text", select elements and textareas */
  input[type=text], select, textarea {
   width: 100%; /* Full width */
-  padding: 10px; /* Some padding */ 
+  padding: 5px; /* Some padding */ 
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -356,7 +381,7 @@ footer{
   background-image: linear-gradient(rgba(58, 63, 80, 0.7), rgba(118, 121, 131, 0.7)), url('./images/python_code_background.png');
 	background-repeat: repeat;
   background-size: cover;
-  height: 100vh;  
+  min-height: 100vh;  
   top: 100px;
   
   
