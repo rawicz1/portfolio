@@ -118,7 +118,7 @@ header a:hover{
   background-image: linear-gradient(rgba(58, 63, 80, 0.7), rgba(118, 121, 131, 0.7)), url('./images/python_code_background.png');
 	background-repeat: repeat;  
   min-height: 100vh;  
-  border: 1px solid white;
+  /* border: 1px solid white; */
   top: 100px;  
 }
 #projects h2{
@@ -142,11 +142,9 @@ header a:hover{
 }
 .boxes{
   
-  display: flex;
-  /* border: 1px solid red; */
+  display: flex;  
   flex-wrap: wrap;
-  min-height: 88vh;
-  /* height: 500px; */
+  min-height: 88vh;  
   justify-content: space-around;
   font-family: 'Roboto', sans-serif;
   color: white;   
@@ -159,26 +157,25 @@ header a:hover{
  
  
  .video {
-  /* border-bottom: 1px solid red; */
   box-shadow: 0 0 10px rgb(0, 0, 0);
   /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   width: 40vh;
+  
   opacity: 0.7;
   transition: all 0.5s;
-  /* align-items: center; */
-  /* justify-content: center; */
  
 }
 .video p{
   
   opacity: 1;
-  /* background-color: #202d4f; */
+  background-color: #202d4f;
   padding: 10px;
   border-radius: 10px;  
   z-index: 20;
+  font-size: 2em;
 }
 .video:hover{
   box-shadow: 0 0 15px rgb(0, 3, 5);
@@ -197,19 +194,21 @@ header a:hover{
    
 }
 .video-box{
-  padding: 20px;
+  padding: 30px;
  
   /* border: 1px solid rgb(0, 255, 106); */
   
   width: 50%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
 .video-box p{
   padding: 10px;
-  box-shadow: 0 0 10px rgb(0, 0, 0);
+  box-shadow: 0 0 10px rgb(9, 9, 9);
   border-radius: 10px;
+  font-size: 1.2em;
 
 }
     
@@ -397,16 +396,16 @@ footer{
     padding: 20px 20px 0 20px;   
   }
 .boxes{
-  margin: 0;
+  
   flex-direction: column;
   display: flex;
   align-items: center;
   min-height: 95vh;
-  justify-content: space-evenly;
- 
-  /* flex-wrap: nowrap; */
-   
+  justify-content: space-around;
+ border: 1px solid red;
+  /* flex-wrap: nowrap; */   
 }
+
 
 #contact{
   height: 100vh;
@@ -432,15 +431,15 @@ footer{
 }
 
 .video {
-  /* border-bottom: 1px solid red; */
+  
   box-shadow: 0 0 10px rgb(0, 0, 0);
   border-radius: 10px;
   width: 20vh;
   transition: all 0.5s;
-  opacity: 0.5;
-  
-  
+  opacity: 0.5;  
 }
+
+
 .video:hover{
   box-shadow: 0 0 15px rgb(0, 3, 5);
   width: 20vh;
@@ -459,8 +458,20 @@ footer{
   padding: 20px;
   /* border: 1px solid red; */
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  
 }
-
+.video-box p{
+  min-width: 60%;
+}
+/* .video-box{
+  padding: 20px;   
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+} */
 
 
 
