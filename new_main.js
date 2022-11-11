@@ -34,7 +34,7 @@ function showDiv(e){
     
     const bullet = document.createElement('div');
     bullet.classList.add('bullet')
-    bullet.style.left = x + 45 +'px'
+    bullet.style.left = x +'px'
     bullet.style.top = y + 20 + 'px'
     
     mainSection.appendChild(bullet)
