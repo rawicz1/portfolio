@@ -402,7 +402,7 @@ footer{
   align-items: center;
   min-height: 95vh;
   justify-content: space-around;
- border: 1px solid red;
+ 
   /* flex-wrap: nowrap; */   
 }
 
