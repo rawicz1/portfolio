@@ -363,7 +363,7 @@ footer{
   .mainPhoto{
     margin: auto;
     flex-direction: column;
-    min-height: 88vh;
+    height: 88vh;
     justify-content: space-between;   
     width: 80%;
   }
