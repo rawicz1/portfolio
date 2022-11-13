@@ -372,7 +372,7 @@ footer{
   }
   #projects{
    /* margin-top: 10vh; */
-    height: 100vh;    
+    min-height: 100vh;    
   }  
   #projects h2{
     font-size: 2em;
