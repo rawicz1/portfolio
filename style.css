@@ -50,12 +50,35 @@ header ul li{
 header a{
   color: white;
   text-decoration: none;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  /* padding-top: 25px; */
+  /* padding-bottom: 25px; */
 }
 header a:hover{
   color: rgb(6, 23, 255);
 }
+header a:hover .dropdown_content{display: inline-block;}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  padding: 20px;
+  min-width: 360px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+.dropdown_link{
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown_content {display: block;}
+/* .dropdown_content a:hover {
+                            padding: 20px;} */
+
+
 /*------------------main section--------------------*/
 
 .mainPhoto{
@@ -108,24 +131,21 @@ header a:hover{
 
   /*-------------------------------projects--------------*/
 #projects{
-  
- 
-  
-  /* background-color: rgb(111, 111, 111); */
   text-align: center;
   height: auto;
 }
+
 .projects-bg{
   background-image: linear-gradient(rgba(58, 63, 80, 0.7), rgba(118, 121, 131, 0.7)), url('./images/python_code_background.png');
 	background-repeat: repeat;  
   min-height: 100vh;  
-  /* border: 1px solid white; */
   top: 100px;  
 }
+
 #projects h2{
-  
   color: rgb(255, 255, 255)
 }
+
 .projectsHeader{
   display: flex;
   align-items: center;
@@ -133,16 +153,16 @@ header a:hover{
   padding: 50px 0;
   opacity: 1;
   height: 10vh;
-
 }
+
 .line{
   min-width: 15%;
   height: 2px;
   background-color: rgb(228, 228, 228);
   opacity: 1;
 }
+
 .boxes{
-  
   display: flex;  
   flex-wrap: wrap;
   min-height: 88vh;  
@@ -157,21 +177,17 @@ header a:hover{
   color: white;
  }
  
- 
  .video {
   box-shadow: 0 0 10px rgb(0, 0, 0);
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   width: 40vh;
-  
   opacity: 0.7;
   transition: all 0.5s;
- 
 }
+
 #projects p{
-  
   opacity: 1;
   background-color: rgba(38, 53, 90, 0.5);
   padding: 10px;
@@ -179,6 +195,7 @@ header a:hover{
   z-index: 20;
   font-size: 1em;
 }
+
 .video:hover{
   box-shadow: 0 0 15px rgb(0, 3, 5);
   width: 42vh;
@@ -187,31 +204,78 @@ header a:hover{
 
 .video.expanded {
   z-index: 50;
-   /* background-color: green; */
    width: 70vh;
    box-shadow: 0 0 20px rgb(0, 2, 3);
    opacity: 1;
-   
-   
-   
 }
+
 .video-box{
   padding: 30px;
- 
-  /* border: 1px solid rgb(0, 255, 106); */
-  
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
+
 .video-box p{
   padding: 10px;
   box-shadow: 0 0 10px rgb(9, 9, 9);
   border-radius: 10px;
   font-size: 1.2em;
+}
 
+/*------------------------------react redux -------------------------------------*/
+
+#react_redux{
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.react_redux_bg{
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(178, 183, 199, 0.7), rgba(118, 121, 131, 0.7)), url('./images/react_redux_background.png');
+	background-repeat: repeat;
+  background-size: 170%;
+  background-position: center;  
+}
+
+.react_items{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.react_items a{
+  text-decoration: none;
+}
+
+.react_items img{
+  height: 20rem;
+}
+
+.react_redux_box{
+  color: white;
+  text-align: center;  
+  background-color: rgba(65, 65, 65, 0.2);
+  border-radius: 10px;
+  transition: transform .4s; /* Animation */
+  box-shadow: 0 0 10px black;
+  padding: 1em;
+
+}
+.react_redux_box:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 4px black;
+}
+.react_redux_box p{
+  font-size: 1.3em;
+}
+.react_redux_box button{
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 20px;
 }
     
  /*---------------------------contact-----------------------*/
@@ -322,7 +386,7 @@ footer{
     color: aliceblue;
     border: 1px solid red;
   }
-  /*-----------------------------------------mobile---------------------------*/
+  /*----------------------------------------- media query ---------------------------*/
 
   @media screen and (max-width: 580px) {
     body {      
@@ -409,6 +473,54 @@ footer{
 }
 
 
+.react_redux_bg{
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(178, 183, 199, 0.7), rgba(118, 121, 131, 0.7)), url('./images/react_redux_background.png');
+	background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.react_items{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+} 
+
+.react_items a{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+ 
+.react_items img{
+ max-width: 90%;
+ margin: 10px;
+ height: auto;
+} 
+
+.react_redux_box{
+  color: white;
+  width: 90%;
+  text-align: center;  
+  border-radius: 10px;
+  transition: transform .4s;
+  box-shadow: 0 0 10px black;
+  padding: 10px 0;
+}
+.react_redux_box:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 4px black;
+} 
+.react_redux_box p{
+  font-size: 1.3em;
+}
+#react_app img{
+  height: 30vh;
+}
+
 #contact{
   height: 96vh;
   display: flex;
@@ -419,11 +531,12 @@ footer{
 #contact h2{
   font-size: 2.7em;
 }
+
 footer{
   height: 4vh;
 }
+
 .contactForm {
-  
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -431,19 +544,18 @@ footer{
   font-family: 'Roboto', sans-serif;
   box-shadow: 0 0 10px black;
 } 
+
 .bullet{
   display: none;
 }
 
 .video {
-  
   box-shadow: 0 0 10px rgb(0, 0, 0);
   border-radius: 10px;
   width: 20vh;
   transition: all 0.5s;
   opacity: 0.5;  
 }
-
 
 .video:hover{
   box-shadow: 0 0 15px rgb(0, 3, 5);
@@ -457,28 +569,17 @@ footer{
    width: 100%;
    box-shadow: 0 0 20px rgb(0, 2, 3);
    opacity: 1;
-   /* position:absolute; */
 }
+
 .video-box{
   padding: 20px;
-  /* border: 1px solid red; */
   width: 80%;
   display: flex;
   flex-direction: column;
-  
 }
+
 .video-box p{
   min-width: 60%;
 }
-/* .video-box{
-  padding: 20px;   
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-} */
 
-
-
-
-  }
+}

@@ -22,7 +22,13 @@
                 <img src="images/main_photo.png" alt="logo" > 
                 <ul>
                     <li id="clickMe">Click me!</li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li class="dropdown"><a href="">Projects</a>
+                        <div class="dropdown_content">                            
+                            <a class="dropdown_link" href="#projects">Python projects</a>
+                            <a class="dropdown_link" href="#react_redux">React / Redux projects</a>
+                        </div>
+                    </li>
+                        
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </header>
@@ -96,6 +102,36 @@
             </div>
         </section>
 
+        <section id="react_redux">
+            <div class="react_redux_bg">
+                <div class="react_items" >
+                   <a href="https://rawicz1.github.io/redux_meal_planner/" target="_blank">
+                        <div class="react_redux_box" >
+                        <img src="./images/redux_meal_planner.png"/>
+                        <br><br> 
+                        <p>Meal planner with Redux and Spoonacular API</p>
+                        
+                      
+                    </div>
+                    </a>
+                    
+                    <a href="https://rawicz1.github.io/React-calories-counter/" target="_blank">
+                    <div id="react_app" class="react_redux_box">
+                        <img src="./images/react_counter.png" />
+                        <br>
+                        <br>
+                        <br>
+                        <p>Daily calorie counter with React</p> 
+                                         
+                    </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
         <section id="contact">
             <div class="contactHeader">
                 
@@ -132,7 +168,7 @@
             
         </section>
         <footer>
-            copyright
+            Copyright &copy; 2022 
         </footer>
         
     </div>
